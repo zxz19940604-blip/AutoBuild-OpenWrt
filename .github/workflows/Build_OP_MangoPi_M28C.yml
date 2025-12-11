@@ -58,7 +58,7 @@ jobs:
         git clone --depth 1 $REPO_URL -b $REPO_BRANCH openwrt
         git clone --depth 1 https://github.com/vernesong/OpenClash.git OpenClash
         cd openwrt
-        cp patches/rk3528-mangopi-m28c.dts openwrt/target/linux/rockchip/files/arch/arm64/boot/dts/rockchip/rk3528-mangopi-m28c.dts
+        cp patches/rk3528-mangopi-m28c.dts lede/target/linux/rockchip/files/arch/arm64/boot/dts/rockchip/rk3528-mangopi-m28c.dts
         echo 'src-git Qmodem https://github.com/FUjr/QModem.git;main' >> feeds.conf.default
         echo 'src-git istore https://github.com/linkease/istore;main' >> feeds.conf.default
         echo 'src-git nas https://github.com/linkease/nas-packages.git;master' >> feeds.conf.default
